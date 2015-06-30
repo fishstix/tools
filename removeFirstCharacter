@@ -1,0 +1,8 @@
+#read input
+#echo $input
+#echo $input | sed 's/.$//'
+
+while read -r line
+do
+    echo "$line" | sed 's/^.\{1\}//' 
+done 
