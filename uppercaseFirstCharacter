@@ -1,0 +1,10 @@
+#foo=$1
+#foo=`echo ${foo:0:1} | tr  '[a-z]' '[A-Z]'`${foo:1}
+#echo ${foo}
+
+while read -r line
+do
+   foo=$line
+   foo=`echo ${foo:0:1} | tr  '[a-z]' '[A-Z]'`${foo:1} 
+   echo ${foo} 
+done 
